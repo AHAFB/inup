@@ -1,5 +1,5 @@
 import requests,telebot
-bot = telebot.TeleBot('5992412853:AAFQuTYNwsIsS3SRvBHZbPXqWr9_59rKxKY')
+bot = telebot.TeleBot('5144396245:AAEydB4XI9Lfr38ASbieDlU1lUZlhPGYOjI')
 @bot.message_handler(commands=["start"])
 def mes(message):
  bot.send_message(message.chat.id,'مرحباً بك في بوت رشق نقاط INSTA-UP \n ارسل المعلومات بهذا الشكل \n 0000:1111 \n حيث 0000 هو ايدي حسابك و 1111 هو ايدي الضحية \n By : @K_K3L')
@@ -9,7 +9,7 @@ def inf(message):
  b_4qr= message.text
  baqer= b_4qr.split(':')[0]
  TAK   = b_4qr.split(':')[1]
- url=(f"http://192.168.0.125:8080/instaup.site.php?oid={TAK}&uid={baqer}&submit=submit")
+ url=(f"https://RASHIK-INSTA-UP-BY-ALI-HUSSEIN.alihussain64.repl.co?oid={TAK}&uid={baqer}&submit=submit")
  bar=str(requests.get(url).text)
  if 'DONE : ' in bar:
    BB = bar.split('DONE : ')[1]
